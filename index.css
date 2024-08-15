@@ -1,0 +1,266 @@
+
+
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    background-image: url("../../Resources/Images/TanzgruppePoster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    align-content: center;
+    
+}
+
+/*NAV*/
+
+.header-nav {
+    display: flex;
+    position: absolute top;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #171717;
+    width: 100%;
+    min-height: fit-content;
+    align-items: center;
+    opacity: 0.95;   
+    margin: 0; 
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    border-bottom:  0.125rem solid #848484;
+    z-index: 5;
+    
+}
+
+.header-nav .header-logo {
+    display: flex;
+    height: 400px;
+}
+
+.header-nav ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    height: 10%;
+    align-items: center;
+    align-self: center; 
+    margin: 1rem;
+    padding-right: 3rem;
+    flex-wrap:wrap;
+
+}
+
+.header-nav li { 
+   font-size:  3rem ;
+   padding: 1rem;
+   font-weight: bold;
+   text-shadow: .35rem .35rem .5rem #b85335 ;
+   
+}
+
+.header-nav a:link {
+    text-decoration: none;
+    color: white; 
+}
+
+.header-nav a:visited {
+    color: white;
+}
+
+.header-nav a:hover {
+    color: #e9cc91;
+}
+
+.header-nav a:active {
+    color:#b85335;
+    text-shadow:  .12em .10em .1em #e9cc91;
+
+}
+
+@media screen and (max-width: 755px ) {
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
+        justify-content:  center ;
+        justify-items: center;
+        
+    }
+
+    .header-nav ul {
+        display: block;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 535px ) {
+    .header-nav li {
+        font-size: 1.2em ;
+    }
+
+    .header-nav {
+        min-width: fit-content;
+    }
+}
+
+
+@media screen and (max-width:420px) {
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        
+    }
+}
+/*HEADER*/ 
+
+ main {
+    position: relative;
+    display: flex;
+    margin-top: 4em;
+    background-image: url("../../Resources/Images/DJSuspiria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 225px ;
+    width: 65%;
+    color: aliceblue;
+    border-top: 2px solid #848484;
+    border-bottom: 2px solid #848484;
+    align-items: center;
+    
+    
+    
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin: .5em;
+    padding-left: .5em;
+    text-shadow: .13em .13em .2em #b85335;
+}
+
+.about p {
+    font-size: 2rem;
+    margin: .5em;
+    padding: .5em;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+@media screen and (max-width: 755px ){
+    #academy {
+        
+        font-size: 1.2rem;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+    }
+
+}
+
+
+/*Instructors*/
+
+.a {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#instructors {
+    display: flex;
+    background-image: url("../../Resources/Images/Tanz_2018_Interior.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 2px solid #848484;
+    border-bottom: 2px solid #848484;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 600px;
+    /*justify-items: flex-end; */ 
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 10px;
+}
+
+#instructors h1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    color: aliceblue;
+    text-shadow: .13em .13em .2em #b85335;
+    font-size: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+    background-color:#364748;
+    box-shadow: 3px 3px 10px black;
+    color: aliceblue;
+    margin: 5px;
+    padding: 15px;
+    align-items: center;
+    
+}
+
+.card img {
+    height: 330px;
+    width: 220px ;
+    justify-content: center;
+    box-shadow: 0px 0px 30px #232422;
+    /*justify-self: center;
+    align-self: center;*/
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    min-height: 0;
+    text-shadow: 3px 3px 10px #b85335;
+}
+
+.card p {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 220px;
+    min-height: 0;
+    text-shadow:  3px 3px 10px black;
+    padding-bottom: 1em ;
+}
+
+
+@media screen and (max-width: 755px) {
+    #instructors {
+        width: 100%;
+    }
+
+    #instructors h1 {
+        justify-content: center;
+
+    }
+    
+}
+
